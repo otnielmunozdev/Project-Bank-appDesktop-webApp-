@@ -1,0 +1,2852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow4</class>
+ <widget class="QMainWindow" name="MainWindow4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Administracion de Clientes</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes.qrc">
+    <normaloff>:/imagenes/Logo.png</normaloff>:/imagenes/Logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label1001">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/imagenes/fondoo.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Salir12pushButton">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>10</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/imagenes/home2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolBox" name="toolBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>781</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="RegistrarCliente">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>781</width>
+       <height>450</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="label">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>791</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Registrar Clientes</string>
+       </attribute>
+       <widget class="QLabel" name="label1002">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NombreClientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Apellidos Paterno / Apellido Materno / Nombre</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CURPclientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>CURP</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CiudadlineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>130</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Ciudad</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="DomiciliolineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>180</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Domicilio</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CorreoClientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>230</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Correo.Electronico@example.com</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TelefonoClientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>280</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Telefono +52</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label101_2">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>340</y>
+          <width>121</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Datos de Requeridos</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="IdClientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>370</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID de Cliente</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label115">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>380</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Num. Sucursal</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="FechaNacClientedateEdit">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>80</y>
+          <width>110</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="specialValueText">
+         <string/>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy/M/d</string>
+        </property>
+        <property name="date">
+         <date>
+          <year>1950</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AgregarClientepushButton">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>170</y>
+          <width>191</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Registrar Cliente</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarClientepushButton">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>210</y>
+          <width>191</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label101">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>10</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Datos Personales</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ID_sucClientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>370</y>
+          <width>113</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID Sucursal</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="SexocomboBox">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>150</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>H</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>M</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label115_5">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>130</y>
+          <width>31</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Sexo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaClientespushButton">
+        <property name="geometry">
+         <rect>
+          <x>724</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>370</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: transparent;
+background: none;
+border: none;
+background-repeat: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Altas/Busquedas/Modificaciones/Bajas</string>
+       </attribute>
+       <widget class="QLabel" name="label1002_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label101_3">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>10</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Datos Personales</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ModificarNombreClientelineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Apellidos Paterno / Apellido Materno / Nombre</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ModificarCURPclientelineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>CURP</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="ModificarFechaNacClientedateEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>80</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="specialValueText">
+         <string/>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy/M/d</string>
+        </property>
+        <property name="date">
+         <date>
+          <year>1950</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ModificarCiudadlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>130</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Ciudad</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="ModificarSexocomboBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>150</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>H</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>M</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="ModificarDomiciliolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>180</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Domicilio</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ModificarCorreoClientelineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>230</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Correo.Electronico@example.com</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ModificarTelefonoClientelineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>280</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Telefono +52</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label101_4">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>340</y>
+          <width>121</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Datos de Requeridos</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="IdClientelineEdit_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>370</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID de Cliente</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ModificarID_suclineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>370</y>
+          <width>113</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID Sucursal</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="EliminarClientepushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>220</y>
+          <width>201</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Desactivar Cliente del Sistema</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ModificarClientepushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>190</y>
+          <width>201</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Modificar</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="BuscarClientelineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>60</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar (ID empleado)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarClientePushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>60</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label115_3">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>380</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Num. Sucursal</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label115_4">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>130</y>
+          <width>31</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Sexo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarClientesBpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>280</y>
+          <width>201</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar la Búsqueda</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ActivarClientepushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>250</y>
+          <width>201</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Activar Cliente al Sistema</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaClientesModipushButton">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>10</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="IngresarCuenta">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>781</width>
+       <height>450</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>791</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Creación y Consultas de Cuentas/Altas/Bajas</string>
+       </attribute>
+       <widget class="QLabel" name="label1005">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="BuscarClientelineEdit">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>220</y>
+          <width>301</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar (ID Cliente)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarClientePushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>210</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1009">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>10</y>
+          <width>191</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Datos Requeridos para la Cuenta</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NumCuentalineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Número de Cuenta</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="SaldolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Saldo $</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1007">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>16</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>$</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CodigoSeguridadlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Normal</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Código de Seguridad</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1008">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>70</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Fecha de Trámite</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="FechTramitedateEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>100</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="specialValueText">
+         <string/>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy/M/d</string>
+        </property>
+        <property name="date">
+         <date>
+          <year>1950</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AgregarCuentapushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>50</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Agregar Cuenta</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarCuentapushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>140</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="CuentasTableview">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>251</y>
+          <width>761</width>
+          <height>171</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1009_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>181</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Cuentas Existentes del Cliente</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="GenerarNumCuentapushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>50</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Generar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="GenerarCodigoSeguridadpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>170</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Generar</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TipolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Tipo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ActivarCuentapushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>80</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Activar Cuenta</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DesactivarCuentapushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>110</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Desactivar Cuenta</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaCuentaspushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Consulta de Citas</string>
+       </attribute>
+       <widget class="QLabel" name="label1005_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1006">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>60</y>
+          <width>261</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Verificación de la Información en el Sistema</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="BuscarCitalineEdit">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar Cita (Ingresa el ID del la Cita)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarCitaClientePushButton">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>10</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>751</width>
+          <height>331</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaCitapushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Servicios">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>781</width>
+       <height>450</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>791</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Contratación de Seguros</string>
+       </attribute>
+       <widget class="QLabel" name="label1013">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="BuscarCuentaSegurostalineEdit">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>260</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar (Número de la Cuenta)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarCuentaSegurosPushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>250</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1014">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>260</y>
+          <width>261</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Verificación de la Información en el Sistema</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1015">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Contratar Seguros</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="NumPolizalineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Número de Poliza</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="EmpresalineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Empresa</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="DescuentolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Descuento </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="MonedalineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Moneda</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ImportePrimaAnlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Importe Prima Anual</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CoberturalineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Cobertura</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="SumaAseguradalineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>170</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Suma Asegurada</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PlazoSegurolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Plazo de Seguro</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PlazoPagolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>210</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Plazo de Pago</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AgregarSegurospushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>210</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Registrar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarSegurospushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>210</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ActivarseguropushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>70</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Activar Seguro</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DesactivarseguropushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>100</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Desactivar Seguro</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="SegurostableView">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>290</y>
+          <width>761</width>
+          <height>131</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaSeguropushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Créditos Hipotecarios</string>
+       </attribute>
+       <widget class="QLineEdit" name="BuscarHipotecariosCuentalineEdit">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>220</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar (Número de la Cuenta)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarHipotecasCuentaPushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>210</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1016">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Crédito Hipotecario</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="IDcreditoHipotecariolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID Crédito</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PeriodoPagoCHlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Período de Pago</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="MensualidadCHlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Mensualidad</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ValorInmuebleCHlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Valor Inmueble</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TasaInteresCHlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string notr="true">Tasa de Interes</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="MontoPrimaCHlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Monto Prima</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TotalCHlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>170</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AgregarCreditoHpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Registrar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarCreditopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>170</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1014_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>261</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Verificación de la Información en el Sistema</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1013_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTableView" name="CreditoHipotecariotableView">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>251</y>
+          <width>761</width>
+          <height>171</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ActivarCreditopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>70</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Activar Crédito H.</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DesactivarCreditopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>100</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Desactivar Crédito H.</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaCreditoHpushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label1013_5</zorder>
+       <zorder>BuscarHipotecasCuentaPushButton</zorder>
+       <zorder>label1016</zorder>
+       <zorder>IDcreditoHipotecariolineEdit</zorder>
+       <zorder>PeriodoPagoCHlineEdit</zorder>
+       <zorder>MensualidadCHlineEdit</zorder>
+       <zorder>ValorInmuebleCHlineEdit</zorder>
+       <zorder>TasaInteresCHlineEdit</zorder>
+       <zorder>MontoPrimaCHlineEdit</zorder>
+       <zorder>TotalCHlineEdit</zorder>
+       <zorder>AgregarCreditoHpushButton</zorder>
+       <zorder>CancelarCreditopushButton</zorder>
+       <zorder>label1014_2</zorder>
+       <zorder>BuscarHipotecariosCuentalineEdit</zorder>
+       <zorder>CreditoHipotecariotableView</zorder>
+       <zorder>ActivarCreditopushButton</zorder>
+       <zorder>DesactivarCreditopushButton</zorder>
+       <zorder>AyudaCreditoHpushButton</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Contratación de Prestamos</string>
+       </attribute>
+       <widget class="QLabel" name="label1013_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="BuscarPrestamosCuentalineEdit">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>220</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar (Número de la Cuenta)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarPrestamosCuentPushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>210</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1017">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Contratar Préstamo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="IDPrestamolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID Préstamo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TipoPrestamolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Tipo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1017_2">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>100</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Fecha de Aceptación</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="FechaAcepdateEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>90</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="specialValueText">
+         <string/>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy/M/d</string>
+        </property>
+        <property name="date">
+         <date>
+          <year>1950</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="MensualidadPrestamolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Mensualidad</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PeriodoPrestamolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Período del Préstamo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TasaInteresPrestamolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string notr="true">Tasa de Interes</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TotalPrestamolineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>170</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1014_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>261</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Verificación de la Información en el Sistema</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AgregarPrestamopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Registrar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarPrestamopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>170</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ActivarPrestamopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>70</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Activar Prestamo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DesactivarPrestamopushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>100</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Desactivar Prestamo</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="PrestamotableView">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>251</y>
+          <width>761</width>
+          <height>171</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaPrestamospushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Inversiones</string>
+       </attribute>
+       <widget class="QLabel" name="label1013_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/negro3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="BuscarInversionCuentalineEdit">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>220</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar (Número de la Cuenta)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BuscarcuentaInversionPushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>210</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1017_4">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Contratar Inversión</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="IDInversionlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>ID Inversión</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TipoInversionlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Tipo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CantidadInvertidaInversionlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Cantidad Invertida</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TasaInteresInversionlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Tasa de Interes</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="TipoTasaInversionlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string notr="true">Tipo de Tasa</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="PlazoInversionlineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>130</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="placeholderText">
+         <string notr="true">Plazo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AgregarInversionpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Registrar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CancelarInversionpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>170</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label1014_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>261</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Verificación de la Información en el Sistema</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="InversiontableView">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>251</y>
+          <width>761</width>
+          <height>171</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ActivarInversionpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>70</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Activar Inversión</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DesactivarInversionpushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>100</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Desactivar Inversión</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AyudaInversionpushButton">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label1003">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Administración de Clientes</string>
+    </property>
+   </widget>
+   <zorder>label1001</zorder>
+   <zorder>label1003</zorder>
+   <zorder>toolBox</zorder>
+   <zorder>Salir12pushButton</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>Salir12pushButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>CancelarCuentapushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CuentasTableview</receiver>
+   <slot>resizeRowsToContents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>427</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

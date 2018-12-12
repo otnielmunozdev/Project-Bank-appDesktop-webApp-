@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow3</class>
+ <widget class="QMainWindow" name="MainWindow3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Administracion de Empleados</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes.qrc">
+    <normaloff>:/imagenes/Logo.png</normaloff>:/imagenes/Logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>821</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Ingresar/ Altas</string>
+     </attribute>
+     <widget class="QLabel" name="Etiqueta6">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>821</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/fondoo.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Salir2pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/home2.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="IdlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>460</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>ID de Empleado</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NombrelineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>120</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Apellidos Paterno / Apellido Materno / Nombre</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Administración de Empleados</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PuestolineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>400</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Puesto de Trabajo</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TelefonolineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>320</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Telefono +52</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="FechaNacdateEdit">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>170</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="specialValueText">
+       <string/>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy/M/d</string>
+      </property>
+      <property name="date">
+       <date>
+        <year>1950</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="RFClineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>220</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>RFC</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SalariolineEdit">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>400</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Salario $</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="HorariotimeEdit">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>460</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="specialValueText">
+       <string/>
+      </property>
+      <property name="currentSection">
+       <enum>QDateTimeEdit::HourSection</enum>
+      </property>
+      <property name="displayFormat">
+       <string>hh:mm</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AgregarpushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>270</y>
+        <width>191</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Registrar Empleado</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CancelarpushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>310</y>
+        <width>191</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cancelar</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CorreolineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>270</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Correo.Electronico@example.com</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CURPlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>170</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>CURP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label101">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>80</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Datos Personales</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label102">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>370</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Datos Laborales</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label111">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>410</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label115">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>440</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Num. Sucursal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label116">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>440</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Horario de Trabajo</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ID_suclineEdit">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>460</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>ID Sucursal</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Sexo2comboBox">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>220</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>M</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="AyudapushButton">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>460</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+background: none;
+border: none;
+background-repeat: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>Etiqueta6</zorder>
+     <zorder>Salir2pushButton</zorder>
+     <zorder>NombrelineEdit</zorder>
+     <zorder>IdlineEdit</zorder>
+     <zorder>label</zorder>
+     <zorder>PuestolineEdit</zorder>
+     <zorder>TelefonolineEdit</zorder>
+     <zorder>FechaNacdateEdit</zorder>
+     <zorder>RFClineEdit</zorder>
+     <zorder>SalariolineEdit</zorder>
+     <zorder>HorariotimeEdit</zorder>
+     <zorder>AgregarpushButton</zorder>
+     <zorder>CancelarpushButton</zorder>
+     <zorder>CorreolineEdit</zorder>
+     <zorder>CURPlineEdit</zorder>
+     <zorder>label101</zorder>
+     <zorder>label102</zorder>
+     <zorder>label111</zorder>
+     <zorder>label115</zorder>
+     <zorder>label116</zorder>
+     <zorder>ID_suclineEdit</zorder>
+     <zorder>Sexo2comboBox</zorder>
+     <zorder>AyudapushButton</zorder>
+     <zorder>pushButton</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Busquedas/ Modificar/ Bajas</string>
+     </attribute>
+     <widget class="QLabel" name="Etiqueta108">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>811</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/fondoo.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label106">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Administración de Empleados </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Salir3pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/home2.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label107">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>80</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Datos Personales</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarNombrelineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>120</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Apellidos Paterno / Apellido Materno / Nombre</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarCURPlineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>170</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>CURP</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="ModificarFechaNacdateEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>170</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="specialValueText">
+       <string/>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy/M/d</string>
+      </property>
+      <property name="date">
+       <date>
+        <year>1950</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarRFClineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>220</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>RFC</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarCorreolineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>270</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Correo.Electronico@example.com</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarTelefonolineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>320</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Telefono +52</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label108">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>370</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Datos Laborales</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarPuestolineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>400</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Puesto de Trabajo</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarSalariolineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>400</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Salario $</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="ModificarHorariotimeEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>460</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="specialValueText">
+       <string/>
+      </property>
+      <property name="displayFormat">
+       <string>hh:mm </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ModificarIdlineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>460</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>ID de Empleado</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ModificarpushButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>190</y>
+        <width>191</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Modificar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EliminarpushButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>230</y>
+        <width>191</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Eliminar</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BuscarlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>120</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Buscar (ID empleado)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BuscarPushButton">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>120</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/Buscar1.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label112">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>410</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>$</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label113">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>440</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Horario de Trabajo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label114">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>440</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Num. Sucursal</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="SexoModificarcomboBox">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>220</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>M</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="ID_sucModificarlineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>460</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string>ID Sucursal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CancelarBpushButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>340</y>
+        <width>191</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Yu Gothic UI Semibold&quot;;
+font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cancelar la Búsqueda</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AyudaModipushButton">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/imagenes/ayuda.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>NombrelineEdit</tabstop>
+  <tabstop>CURPlineEdit</tabstop>
+  <tabstop>FechaNacdateEdit</tabstop>
+  <tabstop>RFClineEdit</tabstop>
+  <tabstop>CorreolineEdit</tabstop>
+  <tabstop>TelefonolineEdit</tabstop>
+  <tabstop>PuestolineEdit</tabstop>
+  <tabstop>SalariolineEdit</tabstop>
+  <tabstop>HorariotimeEdit</tabstop>
+  <tabstop>IdlineEdit</tabstop>
+  <tabstop>AgregarpushButton</tabstop>
+  <tabstop>CancelarpushButton</tabstop>
+  <tabstop>Salir2pushButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>NombrelineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>608</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>520</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>PuestolineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>427</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SalariolineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>730</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>500</x>
+     <y>433</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TelefonolineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>641</x>
+     <y>343</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>223</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RFClineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>716</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>IdlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>658</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>484</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CorreolineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>641</x>
+     <y>339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HorariotimeEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>742</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelarpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FechaNacdateEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>692</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>466</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagenes/amarillo.jpg</file>
+        <file>imagenes/fondo1.png</file>
+        <file>imagenes/fondo-negro.jpg</file>
+        <file>imagenes/login.png</file>
+        <file>imagenes/login1.png</file>
+        <file>imagenes/Logo pequeño.png</file>
+        <file>imagenes/Logo.png</file>
+        <file>imagenes/salir.png</file>
+        <file>imagenes/candado.png</file>
+        <file>imagenes/usuario.png</file>
+        <file>imagenes/clientes.png</file>
+        <file>imagenes/empleados.png</file>
+        <file>imagenes/home.png</file>
+        <file>imagenes/fondo.jpg</file>
+        <file>imagenes/fondoo.jpg</file>
+        <file>imagenes/marco.png</file>
+        <file>imagenes/negro.jpg</file>
+        <file>imagenes/buscar.png</file>
+        <file>imagenes/Buscar1.png</file>
+        <file>imagenes/clientes2.png</file>
+        <file>imagenes/negro2.jpg</file>
+        <file>imagenes/negro3.png</file>
+        <file>imagenes/home2.png</file>
+        <file>imagenes/login2.png</file>
+        <file>imagenes/exit.png</file>
+        <file>imagenes/login3.png</file>
+        <file>imagenes/ayuda.png</file>
+        <file>imagenes/rojo.png</file>
+        <file>imagenes/verde.png</file>
+    </qresource>
+</RCC>
